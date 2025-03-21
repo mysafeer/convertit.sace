@@ -1,0 +1,7 @@
+/pdf-converter/
+│
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+    └── (any images or icons)

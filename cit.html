@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>File Converter</h1>
+    <p>Convert files from PDF to other formats and vice versa.</p>
+
+    <!-- File Upload Section -->
+    <div class="upload-section">
+      <input type="file" id="fileInput" accept=".pdf, .docx, .txt, .jpg, .png">
+      <button id="convertBtn">Convert</button>
+    </div>
+
+    <!-- Format Selection -->
+    <div class="format-section">
+      <label for="format">Convert to:</label>
+      <select id="format">
+        <option value="pdf">PDF</option>
+        <option value="docx">Word (DOCX)</option>
+        <option value="txt">Text (TXT)</option>
+        <option value="jpg">Image (JPG)</option>
+        <option value="png">Image (PNG)</option>
+      </select>
+    </div>
+
+    <!-- Advanced Tools Section -->
+    <div class="advanced-tools">
+      <h2>Advanced Tools</h2>
+      <button id="compressBtn">Compress PDF</button>
+      <button id="mergeBtn">Merge PDFs</button>
+      <button id="splitBtn">Split PDF</button>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-section">
+      <h2>Output</h2>
+      <a id="downloadLink" style="display:none;">Download Converted File</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
